@@ -1,4 +1,4 @@
-const btn_header_signup = document.querySelector('.header__actions .header__signup');
+const btn_header_signup = document.querySelector('.header__signup');
 
 if (btn_header_signup) {
   btn_header_signup.classList.remove('header__signup');
