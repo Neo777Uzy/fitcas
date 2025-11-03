@@ -3,6 +3,8 @@
 
 setInterval(() => {
   addHeaderLinks();
+  createCustomSections();
+  reorderSections();
 }, 1000);
 
     // Geçiş sırasında özel bölümlerin görünmesini engellemek için flag
@@ -181,6 +183,7 @@ setInterval(() => {
         if (!document.querySelector('.custom-section1.uzy1')) {
             const sec1 = document.createElement('div');
             sec1.className = 'container custom-section1 uzy1 section';
+            sec1.id= 'uzy_gif_section';
             sec1.innerHTML = `<img src="https://raw.githubusercontent.com/Neo777Uzy/fitcas/refs/heads/main/Fitcas_HomapageGif.gif?raw=true" alt="">`;
             parent.insertBefore(sec1, document.getElementById('top-games-wrapper'));
         }
@@ -256,12 +259,14 @@ setInterval(() => {
         const sec2 = document.querySelector('.custom-section2');
         const miniSlider = document.getElementById('mini-slider-wrapper'); // Mini slider elementi
         const topGames = document.getElementById('top-games-wrapper');
+        const gifSection= document.getElementById('uzy_gif_section');
         
-        if (parent && banners && sec1 && sec2 && topGames) {
+        if (parent && banners && sec1 && sec2 && topGames && gifSection) {
             // Sıralama: banners -> sec1 -> sec2 -> miniSlider -> topGames
             parent.insertBefore(banners, topGames);
             parent.insertBefore(sec1, topGames);
             parent.insertBefore(sec2, topGames);
+            parent.insertBefore(gifSection, topGames);
             
             // Mini slider'ı custom-section2'nin altına ekle
             if (miniSlider) {
