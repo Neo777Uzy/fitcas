@@ -1,8 +1,8 @@
 
 (function () {
 
-  const matchTime = new Date("2026-04-24T22:00:00+03:00");
-  const matchBanner = `<a href="/tr/sportsbook"><img src="https://cdn.jsdelivr.net/gh/Neo777Uzy/fitcas@master/images/240426.jpg?raw=true" alt=""></a>`;
+  const matchTime = new Date("2026-05-16T16:30:00+03:00");
+  const matchBanner = `<a href="/tr/sportsbook"><img src="https://cdn.jsdelivr.net/gh/Neo777Uzy/fitcas@master/images/160526.jpg?raw=true" alt=""></a>`;
 
 
 
