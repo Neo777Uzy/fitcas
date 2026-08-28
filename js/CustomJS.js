@@ -1,1 +1,1 @@
-console.log('🚀 Harici JS başarıyla yüklddsendi!', new Date().toLocaleString());
+console.log('JS geldi haaanım', new Date().toLocaleString());
